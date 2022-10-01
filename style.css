@@ -1,6 +1,5 @@
 html {
     background-color:#020659;
-    height: 100vh;
 }
 
 body {
@@ -286,7 +285,7 @@ footer {
 /*Footer section ends*/
 
 /*media query for medium-sized screen*/
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 834px) {
     body {
         width: 834px;
     }
@@ -331,12 +330,29 @@ footer {
     figure img {
         float: left;
     }
-    
-    .scrollbar-grid {
-    display: flex;
-    flex-direction: column;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
+
+    #playlists div {
+        display: grid; 
+        height: 50%;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    #curated div {
+        display: grid;
+        height: 50%;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    .curate-button {
+        position: relative;
+        left: 220px;
+    }
+
+    .playlists-button {
+        position: relative;
+        left: 230px;
+    }
 
 }
