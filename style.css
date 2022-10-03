@@ -9,6 +9,7 @@ body {
     background-color: #ffffff;
 }
 
+/*Header and nav section begin*/
 header {
     padding: 100px 30px 10px 30px;
     background: linear-gradient(90deg, #2104d9,#020659,  #000000);
@@ -138,7 +139,9 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
+/*Header and nav section end*/
 
+/*Trending section begins*/
 .scrollbar {
     display: flex;
     flex: 1;
@@ -208,6 +211,7 @@ audio {
 .more:hover {
     background-color: #020659;
 }
+/*Trending section ends*/
 
 /*Playlist section begins*/
 .playlists-style {
@@ -284,7 +288,7 @@ footer {
 }
 /*Footer section ends*/
 
-/*media query for medium-sized screen*/
+/*Media query for medium-sized screen*/
 @media screen and (min-width: 834px) {
     body {
         width: 834px;
@@ -311,6 +315,11 @@ footer {
         position:relative;
         left: 320px;
         bottom: 75px;
+    }
+
+    [href="#playlists"]:hover, [href="#curated"]:hover, [href="#trending"]:hover, [href="user"]:hover {
+        height: 37px;
+        margin-top: -2px;
     }
 
     label {
